@@ -1,0 +1,42 @@
+body{
+	background: LightGray;
+}
+a:link, a:visited{
+	color:Tomato;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;	
+}
+
+a:hover, a:active{
+	background: yellow;
+}
+
+table{
+	width: 100%;
+}
+
+th{
+	background: gray;
+}
+
+table, th, td{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+h1{
+	color: blue;
+	text-align: center;
+}
+.center{
+	text-align: center;
+}
+
+.btn {
+	background: #6970C1;
+	padding:5px 10px !important;
+	border:1px solid #604D0A;
+	color: #fff;
+}
