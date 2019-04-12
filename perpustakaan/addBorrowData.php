@@ -57,12 +57,10 @@ if (isset($_POST['insert'])) {
 					alert('Data was successfully inserted!');
 					window.location='borrowsData.php';
 				</script>";
-			session_destroy();
 		} else {
 			echo "<script>
 					alert('Failed to add new data!');
 				</script>";
-			session_destroy();
 		}
 
 	} else {

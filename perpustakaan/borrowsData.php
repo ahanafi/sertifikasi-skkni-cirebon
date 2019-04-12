@@ -1,5 +1,10 @@
 <?php
 require_once 'config.php';
+unset($_SESSION['MEMBER_NAME']);
+unset($_SESSION['MEMBER_ID']);
+unset($_SESSION['BOOK_TITLE']);
+unset($_SESSION['BOOK_ID']);
+
 //Query for displaying data from table
 $sql = "SELECT id_pinjam, anggota.nama as nama_anggota, tb_buku.judul as judul_buku, tanggal_pinjam, status FROM peminjaman JOIN anggota ON anggota.id_anggota = peminjaman.id_anggota JOIN tb_buku ON tb_buku.id_buku = peminjaman.id_buku";
 $query = mysqli_query($connection, $sql);
